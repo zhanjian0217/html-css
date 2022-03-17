@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .wrap {
+      background-color: #888;
+      width: 960px;
+      display: flex;
+      flex-wrap: wrap;  /* 換行 */
+      
+    }
+    .item {
+      background-color: #fa0;
+      width: 280px;
+      font-size: 40px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;     /* 內容文字的水平排列方向 */  
+    }
+    .item img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <span class="item">
+      <img src="https://picsum.photos/320/200/?random=10">
+      1
+    </span>
+    <span class="item">
+      <img src="https://picsum.photos/320/200/?random=11">
+      2
+    </span>
+    <span class="item">
+      <img src="https://picsum.photos/320/200/?random=12">
+      3
+    </span>
+  </div>
+  
+</body>
+</html>

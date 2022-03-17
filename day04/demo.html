@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .header {
+      /* text-align: right; */
+      height: 50px;
+      background-color: #fff;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+
+    .header::before {
+      content: "\e910";
+      margin:5px  15px;
+      border-left: 1px solid #000;
+      height: 18  px;
+      display: inline-block;
+      
+      /* display:flex; */
+    }
+
+
+
+
+
+
+    .header::after{
+      content: '';
+      border-bottom: 1px solid #00f;
+      display: block ;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="wrap">
+    <div class="header item_1">幫助中心</div>
+    
+  </div>
+
+  
+  
+  
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+  <style>
+    .main-nav a{
+      text-decoration: none;
+      
+    }
+
+    .main-nav > ul{
+      display: flex;
+      list-style-type: none;
+    }
+    .main-nav {
+      display: flex;
+      list-style-type: none;
+      position: relative;
+      
+    }
+
+
+    .main-nav a{
+      background-color: aqua;
+      padding: 10px 30px;
+      /* border: 1px solid red; */
+      display: block;
+      
+    }
+
+    .main-nav ul > li> a::after {
+      content: "";
+      background-color: brown;
+      height: 3px;
+      width: 100px;
+      position: absolute;
+      bottom: 0px; 
+      /* left: 10px;   */
+      transform: scaleX(0);
+    
+    }
+
+    .main-nav ul > li:hover {
+      transform: scaleX(1);
+
+
+    }
+
+
+
+
+
+
+    .sub-nav {
+      display: none;
+    }
+
+  </style>
+
+
+<body>
+  
+  <nav class="main-nav">
+    <ul>
+      <li>
+        <a href="">link</a>
+        <ul class="sub-nav">
+          <li><a href="">sub-link 1</a></li>
+          <li><a href="">sub-link 1</a></li>
+          <li><a href="">sub-link 1</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">link</a>
+        <ul class="sub-nav">
+          <li><a href="">sub-link 2</a></li>
+          <li><a href="">sub-link 2</a></li>
+          <li><a href="">sub-link 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">link</a>
+        <ul class="sub-nav">
+          <li><a href="">sub-link 3</a></li>
+          <li><a href="">sub-link 3</a></li>
+          <li><a href="">sub-link 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">link</a>
+        <ul class="sub-nav">
+          <li><a href="">sub-link 4</a></li>
+          <li><a href="">sub-link 4</a></li>
+          <li><a href="">sub-link 4</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+
+
+</body>
+</html>

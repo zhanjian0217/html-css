@@ -1,0 +1,100 @@
+::before ::after  產生在元素內容的前後 (預設是inlione)
+因為是偽元素 所以常用在裝飾
+
+
+em 這個單位是以這串字體其中的最大寬度 為單位
+
+
+box-model 1. content - box
+          2. padding - box
+          3. border - box
+          4. margin - box
+
+
+box-sizing: border-box;
+            content-box
+
+
+
+
+
+flex-direction : row , row-reverse 以軸的觀念去想
+
+
+writing-mode: vertical-lr; 直行
+
+<body dir="rtl"> right to left
+
+display : flex 只對下一個子層作用
+
+
+
+
+
+
+
+
+對子物件的 針對主軸(main-axis)的改變 對齊 分佈
+justify-content: flex-start;
+                 flex-end
+                 center
+                 space-evenly  等距
+                 space-between 放中間
+                 space-around  放兩側
+
+
+                 
+
+justify-content 
+flex-direction 針對主軸(main-axis)的改變
+
+
+
+
+
+
+
+flex-wrap: wrap-reverse;      交叉軸(cross-axis)的改變
+           wrap               就會有彈性列的出現
+
+
+
+
+
+
+
+
+
+
+align-content:  flex-start       控制彈性列在交叉軸的 1. 對齊 與          （用交叉軸去判斷）
+                flex-end;
+                center
+
+                space-evenly      2. 分佈
+                space-between
+                space-around
+
+
+
+
+align-items: flex-start      對子物件的彈性軸的起點
+             center
+             flex-end; 
+
+
+    
+
+order   <---------->     -1 0 1 做排序  以主軸方向性 任 主軸
+
+
+align-self  >>>>> 控制單一子物件 在彈性軸的位置
+
+
+
+
+
+flex-basis   控制主軸上的長度
+
+flex-grow    剩下空間拿來分配給子物件的主軸長度 主軸方向 上下 左右
+
+flex-shrink

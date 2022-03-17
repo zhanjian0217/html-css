@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* * {
+      margin: 0;
+      padding: 0;
+    } */
+
+    .wrap {
+      width: 500px;
+      height: 500px;
+      background-color: #ccc;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+      
+
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      /* flex-basis: 60px; */
+      background-color: #00f;
+      margin: 4px;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .i1 {
+      flex-grow: 1;
+    }
+
+    .i2 {
+      flex-grow: 1;
+    }
+
+    .i3 {
+      flex-grow: 1;
+    }
+    /* .i1 {
+      flex-basis: 80px;
+    }     */
+
+
+
+
+  </style>
+
+
+
+</head>
+<body >
+
+  <div class="wrap">
+    <div class="item i1">1中文</div>
+    <div class="item i2">2中文</div>
+    <div class="item i3">3中文</div>
+    <!-- <div class="item i4">4中文</div> -->
+    <!-- <div class="item i5">5中文</div> -->
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,67 @@
+CSS 的 reset
+
+1. reset.css
+2. *{     }
+3.Normalize.css
+
+
+* 1em = 16px (預設)
+
+
+
+postion:
+
+1.static : 覆寫其他postion
+
+* 2.relative: 相對定位
+              以上跟左為主 (看書寫方向為主)
+              有定位的物件層級會比較高 > 
+              都有定位的話就比 原始碼的順序 （下面會改掉前面）
+              以 z-index 對排序 2 > 1     會蓋在上面
+
+* 3.fixed
+* 4.absolue: 絕對定位
+抽離原本的資料,自己一層
+設定 left top .... 會去找到上一層有定位屬性的父層以它作基準
+若父層都沒設定，會以視窗第一屏的畫面，做定位
+
+2, 3, 4, 5都可以作為絕對定位的參考點
+
+沒有設定寬高的狀況下，
+自己獨立一層，會根據內容物撐開大小
+
+
+或是用left top ....以視窗第一屏的畫面，做定位可以做到滿版 
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+
+
+
+若有設 left top ....就可以找到基準點 margin就有參考對象
+
+
+
+
+
+5.sticky
+
+
+
+
+
+透明度 transparent
+#aaa0 這個0是透明度
+
+
+
+
+overflow: hidden;  /* 自動隱藏超出的文字或圖片 */
+
+
+object-fit: cover;/* 使圖片等比例放大 */  
+
+
+     object-position: center center;
+                  /* 水平中間 垂直中間 */

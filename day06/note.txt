@@ -1,0 +1,21 @@
+手機 768以下
+平板 窄768 寬1024 
+桌機 1200以上
+
+    /* @media 裝置類型 and (條件) and (條件) {
+      符合媒體條件，會執行的CSS設定(套用設定)
+    } */
+                            >=
+    @media screen and (min-width: 768px) {
+      .box {
+        background-color: #fa0;  
+      }
+    }
+
+
+
+
+由小寫到大
+
+
+欄跟欄的間距

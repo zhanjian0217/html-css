@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    /* .warp{} */
+    .wrap {
+      margin: 15px;
+      padding: 10px;
+      border: 1px solid red;
+      box-sizing: border-box;
+    }
+
+    .item-pic img {
+      width: 100%;
+      display: block;
+    }
+
+    @media screen and (min-width:768px){
+      .wrap{
+        display: flex;
+        width: 720px;
+        margin: auto;
+        /* align-items: center; */
+      }
+      .item-pic {
+        /* width: 47.85100287%; */
+        width: calc((100% - 30px) / 2);
+        background-color: #aaa;
+      }
+
+
+      .item-txt {
+        /* width: 47.85100287%; */
+        width: calc((100% - 30px) / 2);
+        margin-left: 4.29799427%;
+        background-color: #ccc;
+      }
+    }
+
+
+    /* @media screen and (min-width:992px){
+      .wrap {
+        width: 960px;
+      }
+      .item {
+        width: 290px;
+      }
+    }
+
+    @media screen and (min-width:1200px){
+      .wrap {
+        width: 1200px;
+      }
+      .item {
+        width: 370px;
+      }
+    } */
+
+
+
+
+  </style>
+
+
+
+<body>
+
+  <div class="wrap">
+    <div class="item-pic">
+      <img src="https://picsum.photos/300/200/?random=10">
+      
+    </div>  
+
+    <div class="item-txt">
+      <h2>title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit blanditiis quasi molestias animi eum doloremque nulla voluptatum nostrum iusto.</p>
+    </div>  
+    <!-- <div class="item">
+      <img src="https://picsum.photos/300/200/?random=10">
+      <h2>title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit blanditiis quasi molestias animi eum doloremque nulla voluptatum nostrum iusto.</p>
+    </div>
+    <div class="item">
+      <img src="https://picsum.photos/300/200/?random=10">
+      <h2>title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit blanditiis quasi molestias animi eum doloremque nulla voluptatum nostrum iusto.</p>
+    </div> -->
+  </div>
+
+
+  
+</body>
+</html>
