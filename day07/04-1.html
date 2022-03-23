@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ccc;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .logo {
+      width: 80px;
+      height: 40px;
+    }
+
+    .hb {
+      width: 40px;
+      height: 40px;
+      background-color: blue;
+    }
+
+
+    #menu-switch{
+      display: none;
+    }
+
+    
+
+                      /* 平板以下都套用 */
+  @media screen and (max-width:767px) {
+    #menu-switch:checked ~ header nav {
+      display: block;
+    }
+
+    .hb{
+      position: relative;
+    }
+
+    #menu-switch:checked ~ header .hb{
+      background-color: darkorange;
+    } 
+
+    .hb span {
+      width: 36px;
+      height: 4px;
+      background-color: #fff;
+      position: absolute;
+      left: 2px;
+    }
+
+    .hb span:nth-child(1){
+      top: 8px;
+      transform: rotate(0deg);
+      transition: .5s .5s , transform .5s 0s;
+    }
+    #menu-switch:checked ~ header .hb span:nth-child(1){
+      top: 18px;
+      transform: rotate(45deg);
+      transition: .5s .3s , transform .5s .8s; 
+    }
+    .hb span:nth-child(2){
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      opacity: 1;
+      transition: .5s .8s
+    } 
+    #menu-switch:checked ~ header .hb span:nth-child(2){
+      opacity: 0;
+      transition: .3s 
+    }
+
+
+    .hb span:nth-child(3){
+      bottom: 8px;
+      transform: rotate(0deg);
+      transition: .5s .5s , transform .5s 0s; 
+    }
+    #menu-switch:checked ~ header .hb span:nth-child(3){
+      bottom: 18px;
+      transform: rotate(-45deg);
+      transition: .5s .3s , transform .5s .8s; 
+    }
+
+
+    nav {
+      background-color: #fa0;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+    }
+    nav a {
+      display: block;
+    }
+    
+  } 
+
+
+
+  @media screen and (min-width:768px) {
+    .hb {
+      display: none;
+    }
+
+    /* 手機需要 position top left display:none */
+    
+  }
+
+
+  </style>
+</head>
+<body>
+  <input type="checkbox" name="" id="menu-switch">
+  <header>
+    <div class="logo">
+      <img src="https://fakeimg.pl/80x40/200">
+    </div>
+
+    <label for="menu-switch" class="hb">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav>
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+    </nav>
+  </header>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minus sed non quod laudantium. Cupiditate veniam, ipsum accusamus temporibus molestias sunt odit amet cumque sapiente nam nobis ex, distinctio atque.</p>
+  <p>Magni ipsam est, adipisci obcaecati, corporis sunt illo explicabo earum fugiat distinctio repudiandae molestias omnis, veniam ullam recusandae optio voluptatum similique! Blanditiis, natus qui maiores facilis cupiditate itaque obcaecati expedita!</p>
+  <p>Iusto minima mollitia quasi numquam? Molestiae, nulla. Harum deleniti laudantium, consequatur, laborum eligendi exercitationem hic perspiciatis dolore incidunt saepe ipsam reiciendis, sapiente impedit totam consectetur! Sint rerum ipsum quas laborum!</p>
+  <p>Tenetur, cum recusandae pariatur similique veniam fuga quos debitis fugiat quas vero aspernatur odit corrupti quae, dicta, aut voluptatem nostrum? Impedit corporis modi dolorem ipsa laboriosam a, animi repellendus provident.</p>
+  <p>Magni dolores veritatis dolor omnis. A delectus corporis, dolore explicabo ipsa blanditiis! Quibusdam id ratione reprehenderit soluta accusamus, tempore earum amet velit veniam nostrum deserunt illum illo odit architecto atque.</p>
+  <p>Sit aliquam qui sunt suscipit vel maxime nihil aspernatur, tempora expedita inventore consequatur non quibusdam! Sint ab et aliquam. Quos ipsa exercitationem quaerat id est laudantium eligendi unde voluptatum distinctio.</p>
+  <p>Est assumenda ratione tempora amet vitae! Laborum minima autem, aliquid cumque assumenda facilis natus et a accusamus eveniet sit quaerat aut, iste rem quibusdam incidunt eum alias voluptatem debitis eius!</p>
+  <p>Officiis, ipsam dolorum. Eos similique soluta beatae ut, magni hic eligendi unde temporibus vel quis sed repudiandae architecto aliquam, odio quos! Voluptas quod repudiandae odit esse labore molestiae doloribus vel.</p>
+  <p>Impedit illo maiores, sit veniam doloremque placeat nobis, odio ea fugiat et accusamus rem. Suscipit repudiandae reiciendis similique eveniet culpa asperiores molestiae impedit laborum necessitatibus. Dolores ut deleniti possimus tempore.</p>
+  <p>Id, neque at deleniti vel corporis expedita fugit sapiente aperiam ipsam necessitatibus quam nihil dolore quidem, autem assumenda. Eligendi nam ut, vitae quidem quas labore sapiente voluptas illo modi et!</p>
+
+</body>
+</html>
